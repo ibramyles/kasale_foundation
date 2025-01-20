@@ -1,21 +1,353 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  @apply text-base;
+}
+
+/* heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply tracking-tight;
+  /* font-family: var(--raleway-font); */
+}
+/* .navbar a:hover {
+    @apply text-white;
+} */
+/* mobile nav styles */
+.mobile_links {
+  @apply h-[100vh];
+  @apply top-0;
+  @apply w-9/12;
+  @apply fixed;
+  @apply gap-8;
+}
+
+.mobile-nav-logo img {
+  @apply h-32;
+  @apply w-auto;
+}
+/** Carousel styles */
+.react-slideshow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative
+}
+
+.react-slideshow-container .nav {
+  z-index: 10;
+  position: absolute;
+  cursor: pointer
+}
+
+.react-slideshow-container .nav:first-of-type {
+  left: 0
+}
+
+.react-slideshow-container .nav:last-of-type {
+  right: 0
+}
+
+.react-slideshow-container .default-nav {
+  height: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 30px;
+  border: 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.react-slideshow-container .default-nav:hover,
+.react-slideshow-container .default-nav:focus {
+  background: #fff;
+  color: #666;
+  outline: 0
+}
+
+.react-slideshow-container .default-nav.disabled:hover {
+  cursor: not-allowed
+}
+
+.react-slideshow-container .default-nav:first-of-type {
+  margin-right: -30px;
+  border-right: 0;
+  border-top: 0
+}
+
+.react-slideshow-container .default-nav:last-of-type {
+  margin-left: -30px
+}
+
+.react-slideshow-container+ul.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px
+}
+
+.react-slideshow-container+ul.indicators li {
+  display: inline-block;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  padding: 5px;
+  margin: 0
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator {
+  border: 0;
+  opacity: .25;
+  cursor: pointer;
+  background: transparent;
+  color: transparent
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  content: '';
+  background: #000;
+  text-align: center
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:hover,
+.react-slideshow-container+ul.indicators .each-slideshow-indicator.active {
+  opacity: .75;
+  outline: 0
+}
+
+.react-slideshow-fadezoom-wrapper {
+  width: 100%;
+  overflow: hidden
+}
+
+.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap>div {
+  position: relative;
+  opacity: 0
+}
+
+.react-slideshow-wrapper .react-slideshow-fade-images-wrap>div[aria-hidden='true'] {
+  display: none
+}
+
+.react-slideshow-wrapper.slide {
+  width: 100%;
+  overflow: hidden
+}
+
+.react-slideshow-wrapper .images-wrap.horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: auto
+}
+
+.react-slideshow-wrapper .images-wrap>div[aria-hidden='true'] {
+  display: none
+}
+
+.each-slide {
+  position: relative;
+  height: 100vh;
+  @apply lg:h-[100vh];
+  @apply w-full;
+}
+
+.each-slide img {
+  width: 100%;
+  height: 100vh;
+  @apply lg:h-[100vh];
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.each-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.each-slide article {
+  height: max-content;
+  @apply w-10/12;
+  @apply lg:w-7/12;
+  @apply mx-auto;
+  @apply pt-60;
+  @apply lg:pt-80;
+  display: flex;
+  @apply items-center;
+  flex-direction: column;
+  @apply z-20;
+}
+
+.each-slide article h2 {
+  @apply text-4xl;
+  @apply lg:text-6xl;
+  @apply text-center;
+  @apply font-bold;
+  @apply leading-tight;
+  @apply text-white;
+  @apply drop-shadow;
+  @apply z-20;
+  @apply uppercase;
+}
+
+.carousel-action-btns {
+  @apply z-20;
+}
+
+.each-slide article p {
+  @apply pb-4;
+  @apply pr-6;
+  @apply z-20;
+}
+
+/*? styling for pages hero section */
+.page {
+  @apply h-[60vh];
+  @apply lg:h-[60vh];
+  @apply w-full;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply relative;
+  @apply -top-32;
+  @apply bg-slate-400;
+}
+
+.page h2 {
+  @apply text-4xl;
+  @apply pt-24;
+  @apply font-bold;
+}
+
+.item-filter li {
+  @apply hover:cursor-pointer;
+}
+
+footer h4 {
+  @apply text-white;
+}
+
+footer a {
+  @apply hover:text-brand-accent;
+}
+
+.form-styles {
+  @apply flex;
+  @apply flex-col;
+  @apply space-y-5;
+  @apply rounded-lg;
+  @apply lg:w-full;
+  @apply mx-auto;
+  @apply p-5;
+}
+.form-styles input {
+  @apply flex;
+  @apply flex-col;
+  @apply w-full;
+  @apply px-6;
+
+  @apply py-4;
+  @apply border-gray-400;
+  @apply bg-white;
+  @apply rounded-md;
+  @apply focus:outline-none;
+}
+
+.form-button {
+  @apply px-6;
+  @apply py-3;
+  @apply text-white;
+  @apply font-bold;
+  @apply rounded-md;
+  @apply hover:bg-opacity-50;
+}
+.button-google {
+  @apply px-6;
+  @apply py-3;
+  @apply text-white;
+  @apply font-bold;
+  @apply bg-green-700;
+  @apply rounded-md;
+  @apply hover:bg-opacity-50;
+}
+.button-add-product {
+  @apply px-6;
+  @apply py-3;
+  @apply text-white;
+  @apply font-bold;
+  @apply rounded-md;
+  @apply hover:bg-opacity-50;
+}
+.button-top-nav {
+  @apply px-6;
+  @apply py-3;
+  @apply text-white;
+  @apply font-bold;
+  @apply text-sm;
+  @apply bg-brand-accent;
+  @apply rounded-md;
+  @apply hover:bg-opacity-50;
+}
+
+.dark-overlay::before {
+   content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
