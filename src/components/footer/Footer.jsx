@@ -73,16 +73,10 @@ const Footer = () => {
               <FaInstagram className='inline-block text-2xl' />
             </Link>
             <Link
-              href='https://www.twitter.com/kasalefoundation/'
+              href='https://youtube.com/@kasalefoundationuganda?si=dInw7nAeNZ3AlwHQ'
               target='_blank'
             >
-              <FaTwitter className='inline-block text-2xl' />
-            </Link>
-            <Link
-              href='https://www.tiktok.com/@kasalefoundation/'
-              target='_blank'
-            >
-              <FaTiktok className='inline-block text-2xl' />
+              <FaYoutube className='inline-block text-2xl' />
             </Link>
           </div>
         </div>

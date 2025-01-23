@@ -20,7 +20,7 @@ const Navbar = async () => {
         <div className='flex gap-8 items-center text-white text-xs'>
           <span>
             <FaPhone className='text-white inline mr-3' size={20} />
-            0000000000
+            +256 703 643582
           </span>
           <span>
             <FaEnvelope className='text-white inline mr-3' size={20} />
@@ -30,19 +30,19 @@ const Navbar = async () => {
         <div className='-mr-56'>
           <div className='flex gap-4'>
             <Link
-              href='https://www.facebook.com/kasalefoundation/'
+              href='https://www.facebook.com/profile.php?id=100086391490116&mibextid=ZbWKwL'
               target='_blank'
             >
               <FaFacebook className='inline-block text-white text-xl' />
             </Link>
             <Link
-              href='https://www.instagram.com/kasalefoundation/'
+              href='https://www.instagram.com/kasale_foundation_ug/'
               target='_blank'
             >
               <FaInstagram className='inline-block text-white text-xl' />
             </Link>
             <Link
-              href='https://www.instagram.com/kasalefoundation/'
+              href='https://youtube.com/@kasalefoundationuganda?si=dInw7nAeNZ3AlwHQ'
               target='_blank'
             >
               <FaYoutube className='inline-block text-white text-xl' />

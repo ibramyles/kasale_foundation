@@ -1,6 +1,5 @@
 /** @format */
 
-import OurTeam from '@/components/our-team/OurTeam';
 import Image from 'next/image';
 import { FaHeart } from 'react-icons/fa';
 import Link from 'next/link';

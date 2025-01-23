@@ -297,7 +297,6 @@ footer a {
   @apply flex-col;
   @apply w-full;
   @apply px-6;
-
   @apply py-4;
   @apply border-gray-400;
   @apply bg-white;
@@ -340,7 +339,11 @@ footer a {
   @apply rounded-md;
   @apply hover:bg-opacity-50;
 }
-
+.donation_cta {
+  background-image: url('/reusable-pads-resized.jpg');
+  background-size: cover;
+  background-position: center;
+}
 .dark-overlay::before {
    content: '';
     position: absolute;

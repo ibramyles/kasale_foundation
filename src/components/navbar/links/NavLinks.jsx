@@ -30,6 +30,7 @@ const NavLinks = ({ session }) => {
     },
     { title: 'Blog', path: '/blog' },
     { title: 'Contact Us', path: '/contact' },
+    { title: 'Gallery', path: '/gallery' },
   ];
 
   const [open, setOpen] = useState(false);

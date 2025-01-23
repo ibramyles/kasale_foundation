@@ -66,7 +66,6 @@ const Carousel = () => {
                 <div className='flex flex-col lg:flex-row gap-3 items-center justify-center w-full font-bold text-white carousel-action-btns'>
                   <Link
                     href={link}
-                    target='_blank'
                     rel='noopener noreferrer'
                     className='flex items-center py-4 px-8 text-brand-secondary bg-brand-accent rounded-full hover:bg-opacity-50'
                   >

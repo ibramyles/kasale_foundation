@@ -57,7 +57,7 @@ const AboutPage = () => {
           </section>
           <section className='shadow-lg rounded-md lg:rounded-none order-1 overflow-hidden'>
             <Image
-              src='/school garden.jpg'
+              src='/team.jpg'
               width='600'
               height='500'
               className='object-cover w-full h-auto'
@@ -101,9 +101,8 @@ const AboutPage = () => {
               JOIN US
             </h2>
             <p className='text-white mb-4 text-center lg:text-left'>
-              We invite you to be part of our journey. Whether you’re a
-              customer, partner, or supporter, together, we can achieve great
-              things.
+              We invite you to be part of our mission. Whether you’re a donor,
+              partner, or volunteer, together, we can change lives.
             </p>
             <Link
               href='/contact'

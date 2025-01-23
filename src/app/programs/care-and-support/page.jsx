@@ -6,20 +6,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import DonationCTA from '@/components/donation-cta/DonationCTA';
 
-const SocioEconomicSecurity = () => {
+const CareAndSupport = () => {
   return (
     <div>
       <section
         style={{
-          backgroundImage: `url('/re-usable-sanitary-pads.jpg')`,
+          backgroundImage: `url('/reusable-pads-resized.jpg')`,
         }}
         className='page dark-overlay'
       >
         <div className='w-11/12 lg:w-9/12 text-white mx-auto z-10'>
-          <h2 className='pb-4'>Socio-Econonmic Security</h2>
+          <h2 className='pb-4'>Care And Support</h2>
           <p>
-            Empowering communities through sustainable livelihoods and financial
-            independence initiatives.
+            Providing essential care and support to vulnerable individuals and
+            marginalized groups.
           </p>
         </div>
       </section>
@@ -29,7 +29,7 @@ const SocioEconomicSecurity = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:items-start'>
               <div className='lg:h-96'>
                 <Image
-                  src='/nakalama.jpg'
+                  src='/feeding.jpg'
                   className='w-full object-cover lg:h-96'
                   width={1000}
                   height={1000}
@@ -38,7 +38,7 @@ const SocioEconomicSecurity = () => {
               </div>
               <div className='lg:h-96'>
                 <Image
-                  src='/garden-4.jpg'
+                  src='/support.jpg'
                   className='w-full object-cover lg:h-96'
                   width={1000}
                   height={1000}
@@ -46,54 +46,50 @@ const SocioEconomicSecurity = () => {
                 />
               </div>
             </div>
-            <h4 className='py-4 text-3xl lg:text-4xl font-bold'>
-              Socio-Economic Activity
-            </h4>
+            <h4 className='py-4 text-3xl lg:text-4xl font-bold'>Health</h4>
             <p className=''>
-              Our Socio-Economic Security program is designed to empower
-              communities with the tools and resources needed to achieve
-              financial independence. By addressing poverty and fostering
-              economic resilience, we aim to uplift marginalized groups and
-              create lasting change.
+              Health Empowering Girls, Enhancing Dignity: Kasale Foundation's
+              Menstrual Hygiene Project In rural Uganda, where poverty and
+              limited access to resources are a harsh reality, the menstrual
+              health and hygiene of young girls are often compromised, Kasale
+              Foundation recognised this critical issue and launched an
+              innovative Menstrual Hygiene Project aimed at providing girls with
+              dignified and sustainable solutions for managing their
+              menstruation. The project began with the distribution of sanitary
+              pads to girls in need. However, we soon realised that this was
+              only a temporary solution and address this, with help of the
+              funders, we introduced a groundbreaking initiative , providing
+              sewing machines and training for girls to produce reusable
+              sanitary pads.
             </p>
             <h4 className='font-bold text-brand-accent text-lg pt-12 pb-3'>
               KEY ACTIVITIES:
             </h4>
             <ul className='list-disc list-inside space-y-3'>
               <li className=''>
-                Micro-financing initiatives for small businesses.
+                Provision of essential supplies such as food, clothing, and
+                healthcare.
               </li>
               <li className=''>
-                Financial literacy training for individuals and groups.
+                Counseling and psychosocial support services.
               </li>
               <li className=''>
-                Support for women-led enterprises and cooperatives.
+                Advocacy for the rights and dignity of vulnerable groups.
               </li>
               <li className=''>
-                Facilitating access to markets for local products.
+                Community-based care for the elderly and disabled.
               </li>
             </ul>
             <h4 className='font-bold text-brand-accent text-lg pt-12 pb-3'>
-              Community Engagement
+              IMPACT
             </h4>
-            <p>
-              Empowering Differently Abled Children: Kasale Foundation's
-              Home-Based Garden Project In an era where inclusivity and
-              accessibility are vital, Kasale Foundation is championing a
-              groundbreaking initiative to empower children with disabilities
-              through our Home-Based Garden Project. This innovative program
-              provides these remarkable young individuals with:
-            </p>
             <ul className='list-disc list-inside space-y-3'>
+              <li className=''>Reduce absenteeism.</li>
+              <li className=''>Promote Dignity and confidence</li>
+              <li className=''>Foster economic Empowerment</li>
               <li className=''>
-                Opportunities for physical activity and sensory stimulation.
-              </li>
-              <li className=''>
-                A sense of pride, ownership, and accomplishment.
-              </li>
-              <li>
-                Essential life skills such as problem-solving, communication,
-                and self-care.
+                Break stigma; normalise conversations around menstruation,
+                breaking the stigma and taboo surrounding this natural process.
               </li>
             </ul>
           </div>
@@ -105,4 +101,4 @@ const SocioEconomicSecurity = () => {
   );
 };
 
-export default SocioEconomicSecurity;
+export default CareAndSupport;

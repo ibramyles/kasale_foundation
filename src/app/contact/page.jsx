@@ -11,7 +11,7 @@ import { FaYoutube } from 'react-icons/fa';
 
 export const metadata = {
   title: 'Contact Us',
-  description: 'The bulb magazine is located in Iganga district Uganda.',
+  description: 'Kasala foundation is located in Iganga district Uganda.',
 };
 const ContactPage = () => {
   return (
@@ -33,29 +33,29 @@ const ContactPage = () => {
             <span>
               <FaEnvelope className='text-brand-accent mb-1 text-3xl' />
             </span>
-            <span>info@kasalefoundation.org</span>
+            <span>kasaalefoundationuganda@gmail.com</span>
           </p>
           <p className='flex flex-col items-center'>
             <span>
               <FaPhone className='text-brand-accent mb-1 text-3xl' />
             </span>
-            <span>+256705811874 | +256772914636</span>
+            <span>+256 703 643582</span>
           </p>
           <p className='flex flex-col items-center'>
             <span>
               <FaLocationArrow className='text-brand-accent mb-1 text-3xl' />
             </span>
-            <span>Iganga Municipality, Uganda.</span>
+            <span>P.O.BOX 544 Iganga, Uganda.</span>
           </p>
         </div>
         <div className='bg-light-bg-gray rounded-md flex flex-col justify-center text-center space-y-8 py-8 drop-shadow-xl'>
           <p className='text-brand-secondary font-bold text-lg'>
             Connect With Us ?{' '}
           </p>
-          <ul className='mobile-footer-socials w-11/12 bg-white lg:w-6/12 flex justify-between py-2 px-4 rounded-xl mx-auto text-2xl text-brand-accent'>
+          <ul className='mobile-footer-socials w-11/12 bg-white lg:w-4/12 flex justify-between py-2 px-4 rounded-xl mx-auto text-2xl text-brand-accent'>
             <li>
               <Link
-                href='https://www.facebook.com/groups/1488544788301068'
+                href='https://www.facebook.com/profile.php?id=100086391490116&mibextid=ZbWKwL'
                 target='_blank'
               >
                 <FaFacebook />
@@ -63,15 +63,7 @@ const ContactPage = () => {
             </li>
             <li>
               <Link
-                href='https://www.facebook.com/groups/1488544788301068'
-                target='_blank'
-              >
-                <FaTwitter />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href='https://www.facebook.com/groups/1488544788301068'
+                href='https://www.instagram.com/kasale_foundation_ug/'
                 target='_blank'
               >
                 <FaInstagram />
@@ -79,18 +71,10 @@ const ContactPage = () => {
             </li>
             <li>
               <Link
-                href='https://www.facebook.com/groups/1488544788301068'
+                href='https://youtube.com/@kasalefoundationuganda?si=dInw7nAeNZ3AlwHQ'
                 target='_blank'
               >
                 <FaYoutube />
-              </Link>
-            </li>
-            <li>
-              <Link
-                href='https://www.facebook.com/groups/1488544788301068'
-                target='_blank'
-              >
-                <FaTiktok />
               </Link>
             </li>
           </ul>
@@ -104,13 +88,20 @@ const ContactPage = () => {
           <h2 className='text-3xl font-bold pb-8 text-center text-brand-accent'>
             SEND US A MESSAGE
           </h2>
-          <form className='form-styles' action=''>
-            <input type='email' placeholder='Email' name='username' />
+          <form className='flex flex-col gap-4' action=''>
+            <input
+              type='email'
+              placeholder='Email'
+              name='username'
+              className='focus:outline-none rounded-md py-3 w-full px-6 bg-light-bg-gray'
+            />
             <textarea
-              className='px-6 py-3 h-44 rounded-md focus:outline-none'
+              className='px-6 py-3 h-44 w-full border-2 border-dotted rounded-md focus:outline-none'
               placeholder='Your Message'
             ></textarea>
-            <button className='form-button'>Send Message</button>
+            <button className='bg-brand-accent p-3 rounded-md text-white'>
+              Send Message
+            </button>
           </form>
         </div>
       </div>
